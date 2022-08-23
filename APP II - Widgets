@@ -1,0 +1,89 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  
+  runApp(MaterialApp(
+    home: Aula()
+      ),
+  
+ );
+}
+
+class Aula extends StatelessWidget{
+  
+  Widget build(BuildContext context){
+    return Scaffold(//inicio do scaffold
+      appBar: AppBar(//inicio do appbar
+        title: Text("Whatsapp2", style:TextStyle(color:Colors.yellow)),
+        backgroundColor:Colors.purple,
+        
+      ),//final do appbar
+      drawer:Drawer(//inicio do drawer
+
+      ),//final do drawer
+      body:Container(//inicio container
+        color:Colors.black, 
+        child:Column(//inicio do column
+        children:[
+              Row(children:[
+                
+              Container(
+                color:Colors.purple,
+                width:100,
+                margin:EdgeInsets.symmetric(horizontal: 30.0),
+                child:Center(child:Text("Nome", style:TextStyle(color:Colors.yellow)))),
+              
+              Container(
+                color:Colors.yellow,
+                width:100,
+                child:Center(child:Text("CPF", style:TextStyle(color:Colors.purple))),
+              ),
+                      
+              Container(
+                color:Colors.purple,
+                width:100,
+                
+                margin: EdgeInsets.all(30.0),
+                child:Center(child:Text("Telefone", style:TextStyle(color:Colors.yellow))),
+              ),
+            ]),
+              Row(children:[
+                
+                Container(
+                  width:100,
+                  margin: EdgeInsets.all(30.0),
+                  child:Center(child:Text("Kretisque", style:TextStyle(color:Colors.white)))),
+
+                Container(
+                  width:100,
+                  child:Center(child:Text("032.254.123-21", style:TextStyle(color:Colors.white))),
+                ),
+
+                Container(
+                  width:100,
+                  margin: EdgeInsets.all(30.0),
+                  child:Center(child:Text("51987453210", style:TextStyle(color:Colors.white))),
+                ),
+
+
+                ])        
+
+
+
+                      ],
+
+            
+
+               
+         ),//final do column
+        
+        
+      ),//final container
+      
+      
+      
+    
+    );//fim do scaffold 
+  }
+}
+
